@@ -3,105 +3,90 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bugs Or Us PR</title>
+<title>Bugs Or Us PR | Control de Plagas en Puerto Rico</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f8f4;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #1b1b1b;
 }
 
-/* ===== HEADER CON IMAGEN ===== */
+/* ===== HEADER CON IMAGEN REAL SIN FILTRO ===== */
 header {
-    background:
-        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
-        url('hero-bg.png');
+    background-image: url('hero-bg.png'); /* Asegúrate que el nombre sea EXACTO */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: #1b1b1b;
+    padding: 100px 20px;
     text-align: center;
-    padding: 80px 20px;
+    position: relative;
 }
 
-header h1 {
-    font-size: 42px;
-    color: #1b5e20;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 20px;
-    margin: 5px 0;
-}
-
-.licencias {
-    font-size: 12px;
-    margin-top: 10px;
-    color: #444;
-}
-
-/* ===== BOTÓN INGLÉS ===== */
-.language-btn {
+/* Botón idioma */
+.language-switch {
     position: absolute;
     top: 15px;
     right: 20px;
-    background: #1b5e20;
-    color: white;
-    padding: 6px 12px;
-    font-size: 12px;
-    border-radius: 20px;
+    font-size: 14px;
+}
+
+.language-switch a {
+    color: #1b1b1b;
     text-decoration: none;
-}
-
-/* ===== SECCIONES ===== */
-section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-h2 {
-    color: #1b5e20;
-}
-
-/* ===== LISTA DE PLAGAS ===== */
-.pest-list a {
-    display: block;
-    padding: 8px 0;
-    color: #2e7d32;
-    text-decoration: none;
+    margin-left: 10px;
     font-weight: bold;
 }
 
-.pest-list a:hover {
-    color: #1b5e20;
-}
-
-/* ===== GALERÍA ===== */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-}
-
-.gallery img {
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-/* ===== FOOTER ===== */
-footer {
+/* Banner teléfono */
+.phone-banner {
     background: #1b5e20;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.license {
+    font-size: 13px;
+    margin-top: 5px;
+    opacity: 0.95;
+}
+
+/* Sección principal */
+.section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.section h1 {
+    color: #2e7d32;
+}
+
+/* Botón WhatsApp */
+.button {
+    background: #43a047;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background: #2e7d32;
     color: white;
     text-align: center;
     padding: 20px;
+    margin-top: 40px;
 }
 </style>
 </head>
@@ -109,60 +94,38 @@ footer {
 <body>
 
 <header>
-<a href="#" class="language-btn">English</a>
+<div class="language-switch">
+<a href="#">ES</a> | <a href="#">EN</a>
+</div>
 
 <h1>Bugs Or Us PR</h1>
-<p>Exterminador Javier Ortiz</p>
-
-<div class="licencias">
-Licencia #XXXX | Certificación #XXXX
-</div>
-
-<p>
-Protegiendo su hogar y negocio con profesionalismo y responsabilidad, 
-priorizando siempre la seguridad de su familia, sus mascotas y el medio ambiente.
-</p>
-
+<p>Control Profesional de Plagas en Puerto Rico</p>
 </header>
 
-<!-- ===== LISTA EDUCATIVA ===== -->
-<section>
-<h2>Sección Educativa de Plagas</h2>
-
-<div class="pest-list">
-<a href="#">Hormiga Brava</a>
-<a href="#">Hormiga Albaricoque</a>
-<a href="#">Hormiga Albayalde</a>
-<a href="#">Ácaros</a>
-<a href="#">Alacrán (Ciempies)</a>
-<a href="#">Escorpión</a>
-<a href="#">Arriero (Rajiero)</a>
-<a href="#">Gorgojo del Arroz</a>
-<a href="#">Gorgojo de las Harinas</a>
-<a href="#">Viuda Negra</a>
-<a href="#">Piquijuye</a>
-<a href="#">Mosca</a>
+<div class="phone-banner">
+📞 (787) 209-9681
+<div class="license">
+Javier Ortiz, Exterminador Licenciado<br>
+Lic. #7713 | Cert. Agricultura #2018-C-14143
+</div>
 </div>
 
-</section>
+<section class="section">
+<h1>Soluciones Seguras y Responsables</h1>
 
-<!-- ===== GALERÍA ===== -->
-<section>
-<h2>Galería Visual de Plagas</h2>
+<p>
+En <strong>Bugs Or Us PR</strong> brindamos servicios profesionales de control de plagas en Puerto Rico, ofreciendo soluciones seguras y efectivas para propiedades residenciales y comerciales.
+Nuestro enfoque combina experiencia, responsabilidad ambiental y tratamientos adaptados a las condiciones locales, priorizando siempre la seguridad de su familia, sus mascotas y el medio ambiente.
+</p>
 
-<div class="gallery">
-<img src="hormiga.jpg" alt="Hormiga">
-<img src="acaro.jpg" alt="Ácaro">
-<img src="alacran.jpg" alt="Alacrán">
-<img src="viuda.jpg" alt="Viuda Negra">
-<img src="gorgojo.jpg" alt="Gorgojo">
-<img src="mosca.jpg" alt="Mosca">
-</div>
+<a class="button" href="https://wa.me/17872099681" target="_blank">
+Solicitar Servicio por WhatsApp
+</a>
 
 </section>
 
 <footer>
-© 2026 Bugs Or Us PR | Puerto Rico
+© 2026 Bugs Or Us PR | Todos los derechos reservados
 </footer>
 
 </body>
