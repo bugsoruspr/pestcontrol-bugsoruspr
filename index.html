@@ -13,29 +13,29 @@ body {
     color: #1b1b1b;
 }
 
-/* ===== HEADER CON IMAGEN REAL SIN FILTRO ===== */
+/* HEADER CON IMAGEN */
 header {
     background-image: url('hero-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #1b1b1b;
-    padding: 60px 20px 120px 20px; /* menos espacio arriba */
+    padding: 60px 20px 120px 20px;
     text-align: center;
     position: relative;
 }
 
-    header h1 {
-    font-size: 48px;  /* más grande */
+header h1 {
+    font-size: 48px;
     margin-bottom: 10px;
 }
 
 header p {
-    font-size: 25px;  /* aproximadamente 1.25x más grande */
+    font-size: 25px;
     font-weight: 600;
 }
-    
-/*  Botón idioma */
+
+/* Botón idioma */
 .language-switch {
     position: absolute;
     top: 15px;
@@ -49,7 +49,7 @@ header p {
     margin-left: 10px;
     font-weight: bold;
 }
-    
+
 /* Banner teléfono */
 .phone-banner {
     background: #1b5e20;
@@ -66,7 +66,7 @@ header p {
     opacity: 0.95;
 }
 
-/* Sección principal */
+/* Secciones */
 .section {
     padding: 40px 20px;
     max-width: 1000px;
@@ -76,6 +76,36 @@ header p {
 
 .section h1 {
     color: #2e7d32;
+}
+
+/* Lista */
+.pest-list {
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.8;
+    font-weight: bold;
+}
+
+.pest-list a {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+.pest-list a:hover {
+    color: #1b5e20;
+}
+
+/* Galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 /* Botón WhatsApp */
@@ -120,53 +150,67 @@ Lic. #7713 | Cert. Agricultura #2018-C-14143
 </div>
 </div>
 
+<!-- INTRO -->
 <section class="section">
 <h1>Soluciones Seguras y Responsables</h1>
 
 <p>
-En <strong>Bugs Or Us PR</strong> brindamos servicios profesionales de control de plagas en Puerto Rico, ofreciendo soluciones seguras y efectivas para propiedades residenciales y comerciales.
-Nuestro enfoque combina experiencia, responsabilidad ambiental y tratamientos adaptados a las condiciones locales, priorizando siempre la seguridad de su familia, sus mascotas y el medio ambiente.
+En <strong>Bugs Or Us PR</strong> brindamos servicios profesionales de control de plagas en Puerto Rico,
+ofreciendo soluciones seguras y efectivas para propiedades residenciales y comerciales.
+Nuestro enfoque combina experiencia, responsabilidad ambiental y tratamientos adaptados a las condiciones locales,
+priorizando siempre la seguridad de su familia, sus mascotas y el medio ambiente.
 </p>
 
 <a class="button" href="https://wa.me/17872099681" target="_blank">
 Solicitar Servicio por WhatsApp
 </a>
+</section>
 
+<!-- LISTA EDUCATIVA -->
 <section class="section">
 <h1>Sección Educativa de Plagas</h1>
 
-<div style="text-align:left; max-width:600px; margin:auto;">
-<ul style="line-height: 1.8; font-weight: bold; color:#2e7d32;">
-<li><a href="#">Hormiga Brava</a></li>
-<li><a href="#">Hormiga Albaricoque</a></li>
-<li><a href="#">Hormiga Albayalde</a></li>
-<li><a href="#">Ácaros</a></li>
-<li><a href="#">Alacrán (Ciempiés)</a></li>
-<li><a href="#">Escorpión</a></li>
-<li><a href="#">Arriero (Rajiero)</a></li>
-<li><a href="#">Gorgojo del Arroz</a></li>
-<li><a href="#">Gorgojo de Harina</a></li>
-<li><a href="#">Viuda Negra</a></li>
-<li><a href="#">Mosca</a></li>
-<li><a href="#">Murciélagos</a></li>
-<li><a href="#">Ratas</a></li>
-<li><a href="#">Abejas (Protegidas)</a></li>
+<div class="pest-list">
+<ul>
+<li><a href="plagas/hormiga-brava.html">Hormiga Brava</a></li>
+<li><a href="plagas/hormiga-albaricoque.html">Hormiga Albaricoque</a></li>
+<li><a href="plagas/hormiga-albayalde.html">Hormiga Albayalde</a></li>
+<li><a href="plagas/acaros.html">Ácaros</a></li>
+<li><a href="plagas/alacran.html">Alacrán (Ciempiés)</a></li>
+<li><a href="plagas/escorpion.html">Escorpión</a></li>
+<li><a href="plagas/arriero.html">Arriero (Rajiero)</a></li>
+<li><a href="plagas/gorgojo-arroz.html">Gorgojo del Arroz</a></li>
+<li><a href="plagas/gorgojo-harina.html">Gorgojo de Harina</a></li>
+<li><a href="plagas/viuda-negra.html">Viuda Negra</a></li>
+<li><a href="plagas/mosca.html">Mosca</a></li>
+<li><a href="plagas/murcielagos.html">Murciélagos</a></li>
+<li><a href="plagas/ratas.html">Ratas</a></li>
+<li><a href="plagas/abejas.html">Abejas (Protegidas)</a></li>
 </ul>
 </div>
 
 </section>
 
+<!-- GALERÍA -->
 <section class="section">
 <h1>Galería Visual de Plagas</h1>
 
-<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:15px;">
+<div class="gallery">
 
-<img src="hormiga.jpg" style="width:100%; border-radius:10px;">
-<img src="acaro.jpg" style="width:100%; border-radius:10px;">
-<img src="alacran.jpg" style="width:100%; border-radius:10px;">
-<img src="viuda.jpg" style="width:100%; border-radius:10px;">
-<img src="gorgojo.jpg" style="width:100%; border-radius:10px;">
-<img src="rata.jpg" style="width:100%; border-radius:10px;">
+<a href="plagas/hormiga-brava.html"><img src="hormiga-brava.png"></a>
+<a href="plagas/hormiga-albaricoque.html"><img src="hormiga-albaricoque.png"></a>
+<a href="plagas/hormiga-albayalde.html"><img src="hormiga-albayalde.png"></a>
+<a href="plagas/acaros.html"><img src="acaros.png"></a>
+<a href="plagas/alacran.html"><img src="alacran.png"></a>
+<a href="plagas/escorpion.html"><img src="escorpion.png"></a>
+<a href="plagas/arriero.html"><img src="arriero.png"></a>
+<a href="plagas/gorgojo-arroz.html"><img src="gorgojo-arroz.png"></a>
+<a href="plagas/gorgojo-harina.html"><img src="gorgojo-harina.png"></a>
+<a href="plagas/viuda-negra.html"><img src="viuda-negra.png"></a>
+<a href="plagas/mosca.html"><img src="mosca.png"></a>
+<a href="plagas/murcielagos.html"><img src="murcielago.png"></a>
+<a href="plagas/ratas.html"><img src="rata.png"></a>
+<a href="plagas/abejas.html"><img src="abeja.png"></a>
 
 </div>
 
