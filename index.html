@@ -8,160 +8,288 @@
 <meta name="description" content="Bugs Or Us PR ofrece servicios profesionales de control de plagas en Puerto Rico. Atención en Bayamón, Corozal, Dorado, Manatí, Morovis, Naranjito, Toa Alta, Toa Baja, Vega Alta y Vega Baja.">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
-    color: #1b1b1b;
+:root{
+  --green-1:#2e7d32;
+  --green-2:#43a047;
+  --green-3:#1b5e20;
+  --text:#1b1b1b;
+  --soft:#f3fff4;
+  --border:#d9e6db;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: var(--text);
+}
+
+/* HEADER */
 header {
-    background-image: url('hero-bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #1b1b1b;
-    padding: 60px 20px 120px 20px;
-    text-align: center;
-    position: relative;
+  background-image: url('hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--text);
+  padding: 60px 20px 120px 20px;
+  text-align: center;
+  position: relative;
 }
 
 header h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
 header p {
-    font-size: 25px;
-    font-weight: 600;
+  font-size: 25px;
+  font-weight: 600;
 }
 
+/* Botón idioma */
 .language-switch {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 14px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 14px;
 }
 
 .language-switch a {
-    color: #1b1b1b;
-    text-decoration: none;
-    margin-left: 10px;
-    font-weight: bold;
+  color: var(--text);
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: bold;
 }
 
+/* Banner teléfono */
 .phone-banner {
-    background: #1b5e20;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-size: 26px;
-    font-weight: bold;
+  background: var(--green-3);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .license {
-    font-size: 13px;
-    margin-top: 5px;
-    opacity: 0.95;
+  font-size: 13px;
+  margin-top: 5px;
+  opacity: 0.95;
 }
 
+/* Secciones */
 .section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
 }
 
 .section h1 {
-    color: #2e7d32;
+  color: var(--green-1);
+  margin-bottom: 10px;
 }
 
-/* Lista plagas */
-.pest-list {
-    text-align: left;
-    max-width: 600px;
-    margin: auto;
-    line-height: 1.8;
-    font-weight: bold;
+.section-subtitle{
+  margin-top: -4px;
+  font-size: 14px;
+  color:#4a4a4a;
 }
 
-.pest-list a {
-    color: #2e7d32;
-    text-decoration: none;
+/* Botón principal */
+.button {
+  background: var(--green-2);
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
 }
 
-.pest-list a:hover {
-    color: #1b5e20;
+.button:hover {
+  background: var(--green-1);
 }
 
 /* Áreas de Servicio */
 .service-areas {
-    max-width: 900px;
-    margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .areas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 12px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
 }
 
 .area-pill {
-    border: 1px solid #d9e6db;
-    background: #f3fff4;
-    border-radius: 12px;
-    padding: 10px 12px;
-    font-weight: bold;
-    color: #1b5e20;
-    text-decoration: none;
-    display: block;
-    transition: 0.2s;
+  border: 1px solid var(--border);
+  background: var(--soft);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-weight: bold;
+  color: var(--green-3);
+  text-decoration: none;
+  display: block;
+  transition: 0.2s;
 }
 
 .area-pill:hover {
-    background: #43a047;
-    color: white;
+  background: var(--green-2);
+  color: white;
+}
+
+/* Lista plagas */
+.pest-list {
+  text-align: left;
+  max-width: 720px;
+  margin: 18px auto 0 auto;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.pest-list ul{
+  margin: 0;
+  padding-left: 22px;
+}
+
+.pest-list a {
+  color: var(--green-1);
+  text-decoration: none;
+}
+
+.pest-list a:hover {
+  color: var(--green-3);
 }
 
 /* Galería */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 18px;
 }
 
 .gallery img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
-/* Botón WhatsApp */
-.button {
-    background: #43a047;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
+/* FAQ Acordeón */
+.faq-wrap{
+  max-width: 900px;
+  margin: 18px auto 0 auto;
+  text-align: left;
 }
 
-.button:hover {
-    background: #2e7d32;
+.faq-item{
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.faq-question{
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: var(--soft);
+  padding: 14px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--green-3);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+}
+
+.faq-question span{
+  flex: 1;
+}
+
+.faq-icon{
+  font-size: 18px;
+  line-height: 1;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#e8f5e9;
+  color: var(--green-3);
+}
+
+.faq-answer{
+  display:none;
+  padding: 14px 16px;
+  color:#2b2b2b;
+  line-height: 1.55;
+}
+
+.faq-answer p{
+  margin: 0 0 10px 0;
+}
+
+.faq-answer p:last-child{
+  margin-bottom: 0;
+}
+
+/* Botón flotante WhatsApp */
+.whatsapp-float{
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9999;
+  text-decoration: none;
+}
+
+.whatsapp-float .wa-btn{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  background: #25D366;
+  color: white;
+  padding: 12px 14px;
+  border-radius: 999px;
+  font-weight: bold;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+}
+
+.whatsapp-float .wa-icon{
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.18);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size: 20px;
+}
+
+@media (max-width: 420px){
+  header h1 { font-size: 40px; }
+  header p { font-size: 20px; }
+  .phone-banner { font-size: 24px; }
+  .whatsapp-float .wa-text{ display:none; }
+  .whatsapp-float .wa-btn{ padding: 12px; }
 }
 
 footer {
-    background: #2e7d32;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+  background: var(--green-1);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
 </style>
 
-<!-- STRUCTURED DATA -->
+<!-- STRUCTURED DATA: NEGOCIO -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -189,6 +317,59 @@ footer {
     "Toa Baja",
     "Vega Alta",
     "Vega Baja"
+  ],
+  "sameAs": [
+    "https://wa.me/17872099681"
+  ]
+}
+</script>
+
+<!-- STRUCTURED DATA: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta una fumigación en Puerto Rico?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El costo depende del tipo de plaga, el nivel de infestación y el tamaño del área a tratar. En muchos casos, el servicio inicial residencial comienza desde $50 y el mantenimiento mensual desde $30 (según condiciones y tipo de plaga)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es seguro para mascotas y niños?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Es seguro cuando se usa según etiqueta y con aplicación profesional. Algunos productos utilizados están aprobados por EPA para uso residencial y se aplican siguiendo instrucciones estrictas de seguridad."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tiempo debo esperar antes de entrar nuevamente a la casa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El tiempo puede variar según el tratamiento aplicado. En la mayoría de servicios residenciales se recomienda permanecer fuera del área tratada entre 1 a 3 horas o según se indique. No permita que personas ni mascotas toquen las superficies tratadas hasta que estén completamente secas y permita que las superficies se sequen antes de uso."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Ofrecen garantía?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Dependiendo del servicio, la garantía puede incluir retratamiento dentro de los términos acordados. Las condiciones se explican antes de comenzar el servicio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Los productos afectan mis plantas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En aplicaciones dirigidas para control de plagas se utilizan productos de manera responsable. Algunos productos utilizados no son sistémicos en plantas. Cada caso se evalúa y se aplican las recomendaciones según etiqueta y necesidad del área."
+      }
+    }
   ]
 }
 </script>
@@ -197,129 +378,223 @@ footer {
 
 <body>
 
-<header>
-<div class="language-switch">
-<a href="#">ES</a> | <a href="#">EN</a>
-</div>
+<!-- Botón flotante WhatsApp -->
+<a class="whatsapp-float" href="https://wa.me/17872099681" target="_blank" aria-label="WhatsApp Bugs Or Us PR">
+  <div class="wa-btn">
+    <div class="wa-icon">💬</div>
+    <div class="wa-text">WhatsApp</div>
+  </div>
+</a>
 
-<h1>Bugs Or Us PR</h1>
-<p>Control Profesional de Plagas en Puerto Rico</p>
+<header>
+  <div class="language-switch">
+    <a href="#">ES</a> | <a href="#">EN</a>
+  </div>
+
+  <h1>Bugs Or Us PR</h1>
+  <p>Control Profesional de Plagas en Puerto Rico</p>
 </header>
 
 <div class="phone-banner">
-📞 (787) 209-9681
-<div class="license">
-Javier Ortiz, Exterminador Licenciado<br>
-Lic. #7713 | Cert. Agricultura #2018-C-14143
-</div>
+  📞 (787) 209-9681
+  <div class="license">
+    Javier Ortiz, Exterminador Licenciado<br>
+    Lic. #7713 | Cert. Agricultura #2018-C-14143
+  </div>
 </div>
 
-<!-- INTRO (MEJORADA) -->
+<!-- INTRO -->
 <section class="section">
-<h1>Soluciones Seguras y Responsables</h1>
+  <h1>Soluciones Seguras y Responsables</h1>
 
-<p>
-En <strong>Bugs Or Us PR</strong> protegemos su hogar y su negocio con servicios profesionales de control de plagas en Puerto Rico.
-Atendemos infestaciones comunes y situaciones críticas con <strong>diagnóstico claro</strong>, <strong>tratamientos efectivos</strong> y <strong>prevención</strong> para reducir el riesgo de reinfestación.
-Trabajamos con responsabilidad y buenas prácticas, <strong>priorizando siempre la seguridad de su familia, sus mascotas y el medio ambiente</strong>.
-</p>
+  <p>
+    En <strong>Bugs Or Us PR</strong> brindamos servicios profesionales de control de plagas en Puerto Rico,
+    ofreciendo soluciones seguras y efectivas para propiedades residenciales y comerciales.
+    Nuestro enfoque combina experiencia, responsabilidad ambiental y tratamientos adaptados a las condiciones locales,
+    priorizando siempre la seguridad de su familia, sus mascotas y el medio ambiente.
+  </p>
 
-<p style="margin-top:15px;">
-Si ve actividad (cucarachas, ratas, hormigas, mosquitos u otras), <strong>mientras antes se atienda, más fácil y económico suele ser el control</strong>.
-</p>
-
-<a class="button" href="https://wa.me/17872099681" target="_blank">
-Solicitar Servicio Profesional por WhatsApp
-</a>
+  <a class="button" href="https://wa.me/17872099681" target="_blank">
+    Solicitar Servicio Profesional
+  </a>
 </section>
 
 <!-- ÁREAS DE SERVICIO -->
 <section class="section">
-<h1>Áreas de Servicio</h1>
+  <h1>Áreas de Servicio</h1>
+  <p class="section-subtitle">Toque su municipio para escribirnos por WhatsApp.</p>
 
-<div class="service-areas">
-<div class="areas-grid">
+  <div class="service-areas">
+    <div class="areas-grid">
+      <a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Bayam%C3%B3n%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Bayamón</a>
+      <a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Corozal%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Corozal</a>
+      <a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Dorado%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Dorado</a>
+      <a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Manat%C3%AD%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Manatí</a>
+      <a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Morovis%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Morovis</a>
+      <a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Naranjito%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Naranjito</a>
+      <a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Toa%20Alta%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Toa Alta</a>
+      <a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Toa%20Baja%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Toa Baja</a>
+      <a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Vega%20Alta%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Vega Alta</a>
+      <a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Vega%20Baja%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Vega Baja</a>
+    </div>
+  </div>
+</section>
 
-<a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Bayamón%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Bayamón</a>
-<a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Corozal%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Corozal</a>
-<a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Dorado%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Dorado</a>
-<a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Manatí%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Manatí</a>
-<a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Morovis%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Morovis</a>
-<a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Naranjito%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Naranjito</a>
-<a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Toa%20Alta%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Toa Alta</a>
-<a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Toa%20Baja%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Toa Baja</a>
-<a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Vega%20Alta%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Vega Alta</a>
-<a class="area-pill" target="_blank" href="https://wa.me/17872099681?text=Hola,%20estoy%20en%20Vega%20Baja%20y%20necesito%20servicio%20de%20control%20de%20plagas.">Vega Baja</a>
+<!-- FAQ -->
+<section class="section">
+  <h1>Preguntas Frecuentes</h1>
+  <p class="section-subtitle">Respuestas claras y profesionales para ayudarle a tomar una buena decisión.</p>
 
-</div>
-</div>
+  <div class="faq-wrap">
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <span>¿Cuánto cuesta una fumigación en Puerto Rico?</span>
+        <div class="faq-icon">+</div>
+      </button>
+      <div class="faq-answer">
+        <p>El costo depende del tipo de plaga, el nivel de infestación y el tamaño del área a tratar.</p>
+        <p>En muchos casos, el <strong>servicio inicial residencial</strong> comienza desde <strong>$50</strong> y el <strong>mantenimiento mensual</strong> desde <strong>$30</strong> (según condiciones y tipo de plaga).</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <span>¿Es seguro para mascotas y niños?</span>
+        <div class="faq-icon">+</div>
+      </button>
+      <div class="faq-answer">
+        <p>Sí. Es seguro cuando se usa según etiqueta y con aplicación profesional.</p>
+        <p>Además, hay productos utilizados que están <strong>aprobados por la EPA para uso residencial</strong> y se aplican siguiendo instrucciones estrictas de seguridad.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <span>¿Cuánto tiempo debo esperar antes de entrar nuevamente a la casa?</span>
+        <div class="faq-icon">+</div>
+      </button>
+      <div class="faq-answer">
+        <p>El tiempo puede variar según el tipo de tratamiento aplicado. En la mayoría de los servicios residenciales, se recomienda permanecer fuera del área tratada entre <strong>1 a 3 horas</strong>, o según las instrucciones específicas que se le indiquen.</p>
+        <p>Es importante <strong>no permitir que personas ni mascotas toquen las superficies tratadas hasta que estén completamente secas</strong>. Permita que las superficies se sequen antes de uso.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <span>¿Ofrecen garantía?</span>
+        <div class="faq-icon">+</div>
+      </button>
+      <div class="faq-answer">
+        <p>Sí. Dependiendo del servicio, la garantía puede incluir <strong>retratamiento</strong> dentro de los términos acordados.</p>
+        <p>Le explicamos claramente las condiciones antes de comenzar el servicio.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" type="button">
+        <span>¿Los productos afectan mis plantas?</span>
+        <div class="faq-icon">+</div>
+      </button>
+      <div class="faq-answer">
+        <p>En aplicaciones dirigidas para control de plagas se utilizan productos de manera responsable.</p>
+        <p>Algunos productos utilizados <strong>no son sistémicos en plantas</strong>. Cada caso se evalúa y se aplican las recomendaciones según etiqueta y necesidad del área.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <a class="button" href="https://wa.me/17872099681" target="_blank">
+    Solicitar Servicio Profesional
+  </a>
 </section>
 
 <!-- LISTA EDUCATIVA -->
 <section class="section">
-<h1>Plagas Comunes en Puerto Rico</h1>
+  <h1>Plagas Comunes en Puerto Rico</h1>
+  <p class="section-subtitle">Área educativa: toque una plaga para ver información e identificación.</p>
 
-<div class="pest-list">
-<ul>
-<li><a href="plagas/abejas.html">Abejas (Protegidas)</a></li>
-<li><a href="plagas/acaros.html">Ácaros</a></li>
-<li><a href="plagas/alacran.html">Alacrán (Ciempiés)</a></li>
-<li><a href="plagas/arriero.html">Arriero (Ratón Doméstico)</a></li>
-<li><a href="plagas/cucaracha-alemana.html">Cucaracha Alemana</a></li>
-<li><a href="plagas/cucaracha-americana.html">Cucaracha Americana</a></li>
-<li><a href="plagas/escorpion.html">Escorpión</a></li>
-<li><a href="plagas/garrapata.html">Garrapatas</a></li>
-<li><a href="plagas/gorgojo-arroz.html">Gorgojo del Arroz</a></li>
-<li><a href="plagas/gorgojo-harina.html">Gorgojo de Harina</a></li>
-<li><a href="plagas/hormiga-albaricoque.html">Hormiga Albaricoque</a></li>
-<li><a href="plagas/hormiga-albayalde.html">Hormiga Albayalde</a></li>
-<li><a href="plagas/hormiga-brava.html">Hormiga Brava</a></li>
-<li><a href="plagas/mosca.html">Mosca</a></li>
-<li><a href="plagas/mosquito.html">Mosquito Aedes Aegypti</a></li>
-<li><a href="plagas/murcielagos.html">Murciélagos</a></li>
-<li><a href="plagas/pulga.html">Pulgas</a></li>
-<li><a href="plagas/ratas.html">Ratas</a></li>
-<li><a href="plagas/tijerilla.html">Piquijuye (Tijerilla)</a></li>
-<li><a href="plagas/viuda-negra.html">Viuda Negra</a></li>
-</ul>
-</div>
-
+  <div class="pest-list">
+    <ul>
+      <li><a href="plagas/abejas.html">Abejas (Protegidas)</a></li>
+      <li><a href="plagas/acaros.html">Ácaros</a></li>
+      <li><a href="plagas/alacran.html">Alacrán (Ciempiés)</a></li>
+      <li><a href="plagas/arriero.html">Arriero (Ratón Doméstico)</a></li>
+      <li><a href="plagas/cucaracha-alemana.html">Cucaracha Alemana</a></li>
+      <li><a href="plagas/cucaracha-americana.html">Cucaracha Americana</a></li>
+      <li><a href="plagas/escorpion.html">Escorpión</a></li>
+      <li><a href="plagas/garrapata.html">Garrapatas</a></li>
+      <li><a href="plagas/gorgojo-arroz.html">Gorgojo del Arroz</a></li>
+      <li><a href="plagas/gorgojo-harina.html">Gorgojo de Harina</a></li>
+      <li><a href="plagas/hormiga-albaricoque.html">Hormiga Albaricoque</a></li>
+      <li><a href="plagas/hormiga-albayalde.html">Hormiga Albayalde</a></li>
+      <li><a href="plagas/hormiga-brava.html">Hormiga Brava</a></li>
+      <li><a href="plagas/mosca.html">Mosca</a></li>
+      <li><a href="plagas/mosquito.html">Mosquito Aedes Aegypti</a></li>
+      <li><a href="plagas/murcielagos.html">Murciélagos</a></li>
+      <li><a href="plagas/pulga.html">Pulgas</a></li>
+      <li><a href="plagas/ratas.html">Ratas</a></li>
+      <li><a href="plagas/tijerilla.html">Piquijuye (Tijerilla)</a></li>
+      <li><a href="plagas/viuda-negra.html">Viuda Negra</a></li>
+    </ul>
+  </div>
 </section>
 
 <!-- GALERÍA -->
 <section class="section">
-<h1>Galería Visual de Plagas</h1>
+  <h1>Galería Visual de Plagas</h1>
+  <p class="section-subtitle">Toque una imagen para abrir la sección educativa de esa plaga.</p>
 
-<div class="gallery">
-
-<a href="plagas/abejas.html"><img src="abeja.png" alt="Abejas"></a>
-<a href="plagas/acaros.html"><img src="acaro.png" alt="Ácaros"></a>
-<a href="plagas/alacran.html"><img src="alacran.png" alt="Alacrán (Ciempiés)"></a>
-<a href="plagas/arriero.html"><img src="arriero.png" alt="Arriero (Ratón Doméstico)"></a>
-<a href="plagas/cucaracha-alemana.html"><img src="cucaracha-alemana.png" alt="Cucaracha Alemana"></a>
-<a href="plagas/cucaracha-americana.html"><img src="cucaracha-americana.png" alt="Cucaracha Americana"></a>
-<a href="plagas/escorpion.html"><img src="escorpion.png" alt="Escorpión"></a>
-<a href="plagas/garrapata.html"><img src="garrapata.png" alt="Garrapata"></a>
-<a href="plagas/gorgojo-arroz.html"><img src="gorgojo-arroz.png" alt="Gorgojo del Arroz"></a>
-<a href="plagas/gorgojo-harina.html"><img src="gorgojo-harina.png" alt="Gorgojo de Harina"></a>
-<a href="plagas/hormiga-albaricoque.html"><img src="hormiga-albaricoque.png" alt="Hormiga Albaricoque"></a>
-<a href="plagas/hormiga-albayalde.html"><img src="hormiga-albayalde.png" alt="Hormiga Albayalde"></a>
-<a href="plagas/hormiga-brava.html"><img src="hormiga-brava.png" alt="Hormiga Brava"></a>
-<a href="plagas/mosca.html"><img src="mosca.png" alt="Mosca"></a>
-<a href="plagas/mosquito.html"><img src="mosquito.png" alt="Mosquito Aedes Aegypti"></a>
-<a href="plagas/murcielagos.html"><img src="murcielagos.png" alt="Murciélagos"></a>
-<a href="plagas/pulga.html"><img src="pulga.png" alt="Pulga"></a>
-<a href="plagas/ratas.html"><img src="rata.png" alt="Ratas"></a>
-<a href="plagas/tijerilla.html"><img src="tijerilla.png" alt="Piquijuye (Tijerilla)"></a>
-<a href="plagas/viuda-negra.html"><img src="viuda-negra.png" alt="Viuda Negra"></a>
-
-</div>
-
+  <div class="gallery">
+    <a href="plagas/abejas.html"><img src="abeja.png" alt="Abejas"></a>
+    <a href="plagas/acaros.html"><img src="acaro.png" alt="Ácaros"></a>
+    <a href="plagas/alacran.html"><img src="alacran.png" alt="Alacrán (Ciempiés)"></a>
+    <a href="plagas/arriero.html"><img src="arriero.png" alt="Arriero (Ratón doméstico)"></a>
+    <a href="plagas/cucaracha-alemana.html"><img src="cucaracha-alemana.png" alt="Cucaracha Alemana"></a>
+    <a href="plagas/cucaracha-americana.html"><img src="cucaracha-americana.png" alt="Cucaracha Americana"></a>
+    <a href="plagas/escorpion.html"><img src="escorpion.png" alt="Escorpión"></a>
+    <a href="plagas/garrapata.html"><img src="garrapata.png" alt="Garrapata"></a>
+    <a href="plagas/gorgojo-arroz.html"><img src="gorgojo-arroz.png" alt="Gorgojo del arroz"></a>
+    <a href="plagas/gorgojo-harina.html"><img src="gorgojo-harina.png" alt="Gorgojo de harina"></a>
+    <a href="plagas/hormiga-albaricoque.html"><img src="hormiga-albaricoque.png" alt="Hormiga Albaricoque"></a>
+    <a href="plagas/hormiga-albayalde.html"><img src="hormiga-albayalde.png" alt="Hormiga Albayalde"></a>
+    <a href="plagas/hormiga-brava.html"><img src="hormiga-brava.png" alt="Hormiga brava"></a>
+    <a href="plagas/mosca.html"><img src="mosca.png" alt="Mosca"></a>
+    <a href="plagas/mosquito.html"><img src="mosquito.png" alt="Mosquito Aedes Aegypti"></a>
+    <a href="plagas/murcielagos.html"><img src="murcielagos.png" alt="Murciélagos"></a>
+    <a href="plagas/pulga.html"><img src="pulga.png" alt="Pulga"></a>
+    <a href="plagas/ratas.html"><img src="rata.png" alt="Ratas"></a>
+    <a href="plagas/tijerilla.html"><img src="tijerilla.png" alt="Piquijuye (Tijerilla)"></a>
+    <a href="plagas/viuda-negra.html"><img src="viuda-negra.png" alt="Viuda Negra"></a>
+  </div>
 </section>
 
 <footer>
-© 2026 Bugs Or Us PR | Todos los derechos reservados
+  © 2026 Bugs Or Us PR | Todos los derechos reservados
 </footer>
+
+<script>
+/* FAQ accordion */
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const answer = item.querySelector('.faq-answer');
+    const icon = item.querySelector('.faq-icon');
+
+    const isOpen = answer.style.display === 'block';
+
+    // Cerrar todos
+    document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+    document.querySelectorAll('.faq-icon').forEach(i => i.textContent = '+');
+
+    // Abrir el seleccionado
+    if(!isOpen){
+      answer.style.display = 'block';
+      icon.textContent = '−';
+    }
+  });
+});
+</script>
 
 </body>
 </html>
