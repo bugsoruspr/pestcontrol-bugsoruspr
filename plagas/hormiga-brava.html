@@ -6,121 +6,82 @@
 <title>Hormiga Brava | Bugs Or Us PR</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
-    color: #1b1b1b;
-}
-
-header {
-    background-color: #1b5e20;
-    color: white;
-    padding: 25px;
-    text-align: center;
-}
-
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-h1 {
-    color: #2e7d32;
-}
-
-img {
-    width: 100%;
-    max-width: 600px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 12px;
-}
-
-.button {
-    background: #43a047;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 25px;
-}
-
-.back {
-    display: inline-block;
-    margin-top: 20px;
-    color: #2e7d32;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer {
-    background: #2e7d32;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
+body { margin:0; font-family:Arial, Helvetica, sans-serif; background:#ffffff; color:#1b1b1b; }
+header { background:#1b5e20; color:white; padding:25px; text-align:center; }
+.section { max-width:900px; margin:auto; padding:40px 20px; line-height:1.7; }
+.section h1 { color:#2e7d32; text-align:center; }
+.section h2 { color:#2e7d32; margin-top:30px; }
+img { width:100%; max-width:550px; border-radius:12px; display:block; margin:20px auto; }
+.button { background:#43a047; color:white; padding:15px 25px; text-decoration:none; font-weight:bold; border-radius:5px; display:inline-block; margin-top:20px; }
+.back { display:inline-block; margin-top:22px; color:#2e7d32; text-decoration:none; font-weight:bold; }
+footer { background:#2e7d32; color:white; text-align:center; padding:20px; margin-top:40px; }
 </style>
 </head>
 
 <body>
 
 <header>
-<h2>Bugs Or Us PR</h2>
-<p>Exterminador Javier Ortiz</p>
+  <h2>Bugs Or Us PR</h2>
+  <p>Exterminador Javier Ortiz</p>
 </header>
 
-<div class="container">
+<section class="section">
 
-<h1>Hormiga Brava (Solenopsis invicta)</h1>
+<h1>Hormiga Brava (<em>Solenopsis</em> spp.)</h1>
 
-<img src="../hormiga-brava.png" alt="Hormiga Brava Macro">
+<img src="../hormiga-brava.png" alt="Hormiga Brava">
 
-<h3>¿Qué es la hormiga brava?</h3>
+<h2>Descripción</h2>
 <p>
-La hormiga brava, conocida científicamente como <strong>Solenopsis invicta</strong>, es una especie invasiva ampliamente distribuida en Puerto Rico.
-Se caracteriza por su color rojizo y su comportamiento altamente agresivo cuando su colonia es perturbada.
+La “hormiga brava” es conocida por su comportamiento agresivo cuando se perturba el nido.
+En patios y áreas verdes puede formar montículos, y en ocasiones entrar a la estructura
+buscando alimento o refugio.
 </p>
 
-<h3>Riesgos y problemas que ocasiona</h3>
+<h2>Riesgos</h2>
 <ul>
-<li>Picaduras dolorosas que pueden causar reacciones alérgicas severas.</li>
-<li>Formación de montículos en patios y jardines.</li>
-<li>Daños a equipos eléctricos y sistemas de riego.</li>
-<li>Riesgo para niños, mascotas y personas sensibles.</li>
+  <li>Picaduras dolorosas.</li>
+  <li>Reacciones fuertes en personas sensibles o alérgicas.</li>
+  <li>Riesgo para niños y mascotas al jugar en patios/jardines.</li>
 </ul>
 
-<h3>Señales de infestación</h3>
+<h2>Señales de infestación</h2>
 <ul>
-<li>Presencia de montículos de tierra suelta.</li>
-<li>Hormigas rojizas activas durante el día.</li>
-<li>Picaduras frecuentes en áreas exteriores.</li>
+  <li>Montículos o acumulación de tierra suelta.</li>
+  <li>Hormigas activas en patio, aceras o jardineras.</li>
+  <li>Picaduras frecuentes en áreas exteriores.</li>
 </ul>
 
-<h3>Control profesional</h3>
+<h2>Prevención</h2>
+<ul>
+  <li>Evitar acumulación de escombros y exceso de humedad cerca del hogar.</li>
+  <li>Mantener grama y patios limpios.</li>
+  <li>Sellar accesos hacia interior (grietas, puertas sin sellos).</li>
+</ul>
+
+<h2>Control profesional</h2>
 <p>
-El control efectivo requiere tratamientos especializados que eliminen la reina y la colonia completa.
-En <strong>Bugs Or Us PR</strong> utilizamos métodos estratégicos y productos aprobados,
-priorizando siempre la seguridad de su familia, mascotas y el medio ambiente.
+Para control efectivo se requiere estrategia: tratamiento del nido/colonia y manejo del entorno
+para reducir el riesgo de reinfestación. En <strong>Bugs Or Us PR</strong> realizamos diagnóstico claro,
+tratamientos efectivos y prevención, priorizando siempre la seguridad de su familia, mascotas y el medio ambiente.
 </p>
 
 <a class="button" href="https://wa.me/17872099681" target="_blank">
-Solicitar Evaluación Profesional
+Solicitar Servicio Profesional
 </a>
 
 <br>
-
 <a class="back" href="../index.html">← Volver al Inicio</a>
 
-</div>
+</section>
 
 <footer>
-© 2026 Bugs Or Us PR | Puerto Rico
+© <span id="year"></span> Bugs Or Us PR. Todos los derechos reservados.
 </footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
