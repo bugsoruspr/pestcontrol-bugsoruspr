@@ -6,142 +6,75 @@
 <title>Cucaracha Alemana | Bugs Or Us PR</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
-    color: #1b1b1b;
-}
-
-/* Botón volver */
-.top-nav {
-    padding: 15px;
-    background: #f4f4f4;
-}
-
-.top-nav a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #2e7d32;
-}
-
-/* Header */
-header {
-    background: #2e7d32;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 36px;
-}
-
-/* Contenido */
-.section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-}
-
-.section h2 {
-    color: #2e7d32;
-}
-
-.section img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    margin: 20px 0;
-}
-
-ul {
-    text-align: left;
-    max-width: 600px;
-    margin: auto;
-    line-height: 1.8;
-}
-
-/* Botón WhatsApp */
-.button {
-    background: #43a047;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 25px;
-}
-
-/* Footer */
-footer {
-    background: #2e7d32;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
+body { margin:0; font-family:Arial, Helvetica, sans-serif; background:#ffffff; color:#1b1b1b; }
+header { background:#1b5e20; color:white; padding:25px; text-align:center; }
+.section { max-width:900px; margin:auto; padding:40px 20px; line-height:1.7; }
+.section h1 { color:#2e7d32; text-align:center; }
+.section h2 { color:#2e7d32; margin-top:30px; }
+img { width:100%; max-width:550px; border-radius:12px; display:block; margin:20px auto; }
+.button { background:#43a047; color:white; padding:15px 25px; text-decoration:none; font-weight:bold; border-radius:5px; display:inline-block; margin-top:20px; }
+.back { display:inline-block; margin-top:22px; color:#2e7d32; text-decoration:none; font-weight:bold; }
+footer { background:#2e7d32; color:white; text-align:center; padding:20px; margin-top:40px; }
 </style>
 </head>
 
 <body>
 
-<div class="top-nav">
-<a href="../index.html">← Volver al Inicio</a>
-</div>
-
 <header>
-<h1>Cucaracha Alemana</h1>
-<p><em>Blattella germanica</em></p>
+<h2>Bugs Or Us PR</h2>
+<p>Exterminador Javier Ortiz</p>
 </header>
 
 <section class="section">
 
-<img src="../cucaracha-alemana.png" alt="Cucaracha Alemana en Puerto Rico">
+<h1>Cucaracha Alemana (<em>Blattella germanica</em>)</h1>
+
+<img src="../cucaracha-alemana.png" alt="Cucaracha Alemana">
 
 <h2>Descripción</h2>
 <p>
-La cucaracha alemana es una de las plagas domésticas más comunes en Puerto Rico.
-Es pequeña, de color marrón claro, y se identifica fácilmente por sus dos líneas
-oscuras paralelas en el pronoto (detrás de la cabeza).
+La cucaracha alemana es una de las plagas más comunes en interiores.
+Se encuentra principalmente en cocinas y baños.
 </p>
 
-<h2>¿Dónde se encuentran?</h2>
+<h2>Características</h2>
 <ul>
-<li>Cocinas</li>
-<li>Gabinetes</li>
-<li>Electrodomésticos</li>
-<li>Baños</li>
-<li>Áreas con humedad y comida disponible</li>
+<li>Tamaño pequeño (1–1.5 cm).</li>
+<li>Color marrón claro.</li>
+<li>Dos líneas oscuras en el tórax.</li>
+<li>Reproducción rápida.</li>
 </ul>
 
 <h2>Riesgos</h2>
 <ul>
-<li>Contaminación de alimentos</li>
-<li>Propagación de bacterias</li>
-<li>Desencadenan alergias y asma</li>
-<li>Se reproducen rápidamente</li>
+<li>Contaminación de alimentos.</li>
+<li>Desencadenan alergias y asma.</li>
+<li>Alta capacidad de infestación.</li>
 </ul>
 
-<h2>Importante</h2>
+<h2>Control Profesional</h2>
 <p>
-La cucaracha alemana se reproduce con gran rapidez.
-Una infestación pequeña puede convertirse en un problema serio en pocas semanas.
-El tratamiento profesional es clave para un control efectivo.
+El tratamiento requiere cebos estratégicos y monitoreo continuo.
+En <strong>Bugs Or Us PR</strong> utilizamos productos aprobados para uso residencial,
+seguros cuando se aplican según etiqueta.
 </p>
 
 <a class="button" href="https://wa.me/17872099681" target="_blank">
 Solicitar Servicio Profesional
 </a>
 
+<br>
+<a class="back" href="../index.html">← Volver al Inicio</a>
+
 </section>
 
 <footer>
-© 2026 Bugs Or Us PR | Todos los derechos reservados
+© <span id="year"></span> Bugs Or Us PR. Todos los derechos reservados.
 </footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
