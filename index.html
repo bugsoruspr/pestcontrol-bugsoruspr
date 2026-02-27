@@ -295,6 +295,45 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
+
+/* TARJETAS DE PLAGAS - ESTILO COMERCIAL */
+
+.pest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.pest-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #1b1b1b;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.pest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.pest-card img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.pest-card span {
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+    color: #2e7d32;
+}
 </style>
 
 <!-- STRUCTURED DATA: NEGOCIO -->
@@ -517,33 +556,112 @@ Trabajamos con responsabilidad, confidencialidad y buenas prácticas, <strong>pr
 
 <!-- LISTA EDUCATIVA -->
 <section class="section">
-  <h1>Plagas Comunes en Puerto Rico</h1>
-  <p class="section-subtitle">Área educativa: toque una plaga para ver información e identificación.</p>
+<h1>Plagas Comunes en Puerto Rico</h1>
+<p style="font-size:14px; opacity:0.7;">Área educativa</p>
 
-  <div class="pest-list">
-    <ul>
-      <li><a href="plagas/abejas.html">Abejas (Protegidas)</a></li>
-      <li><a href="plagas/acaros.html">Ácaros</a></li>
-      <li><a href="plagas/alacran.html">Alacrán (Ciempiés)</a></li>
-      <li><a href="plagas/arriero.html">Arriero (Ratón Doméstico)</a></li>
-      <li><a href="plagas/cucaracha-alemana.html">Cucaracha Alemana</a></li>
-      <li><a href="plagas/cucaracha-americana.html">Cucaracha Americana</a></li>
-      <li><a href="plagas/escorpion.html">Escorpión</a></li>
-      <li><a href="plagas/garrapata.html">Garrapatas</a></li>
-      <li><a href="plagas/gorgojo-arroz.html">Gorgojo del Arroz</a></li>
-      <li><a href="plagas/gorgojo-harina.html">Gorgojo de Harina</a></li>
-      <li><a href="plagas/hormiga-albaricoque.html">Hormiga Albaricoque</a></li>
-      <li><a href="plagas/hormiga-albayalde.html">Hormiga Albayalde</a></li>
-      <li><a href="plagas/hormiga-brava.html">Hormiga Brava</a></li>
-      <li><a href="plagas/mosca.html">Mosca</a></li>
-      <li><a href="plagas/mosquito.html">Mosquito Aedes Aegypti</a></li>
-      <li><a href="plagas/murcielagos.html">Murciélagos</a></li>
-      <li><a href="plagas/pulga.html">Pulgas</a></li>
-      <li><a href="plagas/ratas.html">Ratas</a></li>
-      <li><a href="plagas/tijerilla.html">Piquijuye (Tijerilla)</a></li>
-      <li><a href="plagas/viuda-negra.html">Viuda Negra</a></li>
-    </ul>
-  </div>
+<div class="pest-grid">
+
+<a href="plagas/abejas.html" class="pest-card">
+<img src="abeja.png" alt="Abejas">
+<span>Abejas</span>
+</a>
+
+<a href="plagas/acaros.html" class="pest-card">
+<img src="acaro.png" alt="Ácaros">
+<span>Ácaros</span>
+</a>
+
+<a href="plagas/alacran.html" class="pest-card">
+<img src="alacran.png" alt="Alacrán">
+<span>Alacrán</span>
+</a>
+
+<a href="plagas/arriero.html" class="pest-card">
+<img src="arriero.png" alt="Arriero">
+<span>Arriero</span>
+</a>
+
+<a href="plagas/cucaracha-alemana.html" class="pest-card">
+<img src="cucaracha-alemana.png" alt="Cucaracha Alemana">
+<span>Cucaracha Alemana</span>
+</a>
+
+<a href="plagas/cucaracha-americana.html" class="pest-card">
+<img src="cucaracha-americana.png" alt="Cucaracha Americana">
+<span>Cucaracha Americana</span>
+</a>
+
+<a href="plagas/escorpion.html" class="pest-card">
+<img src="escorpion.png" alt="Escorpión">
+<span>Escorpión</span>
+</a>
+
+<a href="plagas/garrapata.html" class="pest-card">
+<img src="garrapata.png" alt="Garrapata">
+<span>Garrapata</span>
+</a>
+
+<a href="plagas/gorgojo-arroz.html" class="pest-card">
+<img src="gorgojo-arroz.png" alt="Gorgojo del Arroz">
+<span>Gorgojo Arroz</span>
+</a>
+
+<a href="plagas/gorgojo-harina.html" class="pest-card">
+<img src="gorgojo-harina.png" alt="Gorgojo de Harina">
+<span>Gorgojo Harina</span>
+</a>
+
+<a href="plagas/hormiga-albaricoque.html" class="pest-card">
+<img src="hormiga-albaricoque.png" alt="Hormiga Albaricoque">
+<span>Hormiga Albaricoque</span>
+</a>
+
+<a href="plagas/hormiga-albayalde.html" class="pest-card">
+<img src="hormiga-albayalde.png" alt="Hormiga Albayalde">
+<span>Hormiga Albayalde</span>
+</a>
+
+<a href="plagas/hormiga-brava.html" class="pest-card">
+<img src="hormiga-brava.png" alt="Hormiga Brava">
+<span>Hormiga Brava</span>
+</a>
+
+<a href="plagas/mosca.html" class="pest-card">
+<img src="mosca.png" alt="Mosca">
+<span>Mosca</span>
+</a>
+
+<a href="plagas/mosquito.html" class="pest-card">
+<img src="mosquito.png" alt="Mosquito">
+<span>Mosquito</span>
+</a>
+
+<a href="plagas/murcielagos.html" class="pest-card">
+<img src="murcielagos.png" alt="Murciélagos">
+<span>Murciélagos</span>
+</a>
+
+<a href="plagas/pulga.html" class="pest-card">
+<img src="pulga.png" alt="Pulga">
+<span>Pulga</span>
+</a>
+
+<a href="plagas/ratas.html" class="pest-card">
+<img src="rata.png" alt="Ratas">
+<span>Ratas</span>
+</a>
+
+<a href="plagas/tijerilla.html" class="pest-card">
+<img src="tijerilla.png" alt="Tijerilla">
+<span>Tijerilla</span>
+</a>
+
+<a href="plagas/viuda-negra.html" class="pest-card">
+<img src="viuda-negra.png" alt="Viuda Negra">
+<span>Viuda Negra</span>
+</a>
+
+</div>
 </section>
 
 <!-- GALERÍA -->
