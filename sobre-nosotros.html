@@ -297,7 +297,7 @@ Solicitar Información
 </section>
 
 <footer>
-© 2026 Bugs Or Us PR
+© <span id="year"></span> Bugs Or Us PR. Todos los derechos reservados.
 </footer>
 
 <script>
@@ -323,5 +323,9 @@ menuOverlay.addEventListener('click',closeMenu);
 
 </script>
 
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+  
 </body>
 </html>
