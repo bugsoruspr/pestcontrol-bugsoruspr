@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- PRINCIPALES -->
+  <url><loc>https://bugsoruspr.vercel.app/</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/servicios.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/contacto.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/sobre-nosotros.html</loc></url>
+
+  <!-- PLAGAS -->
+  <url><loc>https://bugsoruspr.vercel.app/plagas/abejas.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/acaros.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/alacran.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/arriero.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/comejen-arboreo.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/comejen-subterraneo.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/cucaracha-alemana.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/cucaracha-americana.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/escorpion.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/garrapata.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/gongoli.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/gorgojo-arroz.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/gorgojo-harina.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/hormiga-albaricoque.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/hormiga-albayalde.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/hormiga-brava.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/mosca.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/mosquito.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/murcielagos.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/polilla-estuche.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/pulga.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/ratas.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/tijerilla.html</loc></url>
+  <url><loc>https://bugsoruspr.vercel.app/plagas/viuda-negra.html</loc></url>
+
+</urlset>
